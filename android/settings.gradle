@@ -1,0 +1,3 @@
+rootProject.name = 'JmkProject'
+
+include ':app'

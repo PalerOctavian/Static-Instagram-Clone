@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Text, 
-	StyleSheet, 
-	TextInput, 
-	View, 
-	Button, 
-	TouchableHighlight,
-	Image } from 'react-native';
+import { StyleSheet,
+	TextInput,
+	View,
+	TouchableHighlight
+} from 'react-native';
 import LoginList from './LoginList.js';
 import LoginTextInput from './LoginTextInput.js';
 import LoginFooter from './LoginFooter.js';
@@ -21,14 +19,13 @@ export default class Login extends Component {
 			 	<View>
 				 	<LoginTextInput/>
 				 	<View style={{flexDirection: 'column', height:50, justifyContent: 'space-between'}}>
-					 	<LoginText1/>
+					 	<LoginText1 />
 					 	<LoginText2/>
 				 	</View>
-				 	<LoginButton/>	
+				 	<LoginButton/>
 			 	</View>
 			 	<LoginFooter/>
             </View>
 			);
 	};
 }
-

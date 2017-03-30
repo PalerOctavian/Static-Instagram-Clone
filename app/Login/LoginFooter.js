@@ -12,9 +12,11 @@ export default class LoginFooter extends Component {
 			<View style = {style.view}>
 				<Text style = {style.text}>
 					Dont have an account?
+
 					<Text style = {style.textHighlight}
 					onPress={() => Actions.register()}>
 					Sign up.
+					
 					</Text>
 				</Text>
 			</View>

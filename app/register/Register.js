@@ -6,31 +6,39 @@ import {
   Text,
   TouchableOpacity} from 'react-native';
 import RegisterFooter from './RegisterFooter.js';
-import LoginList from '../LoginList.js';
+import LoginHeader from '../Login/LoginHeader.js';
 
 export default class Register extends Component {
   render(){
     return (
       <View style={style.main}>
-        <LoginList/>
+        <LoginHeader/>
         <View>
           <View style={{flexDirection:'row'}}>
-            <View style={{flex:0.1}}></View>
+
+              <View style={{flex:0.1}}></View>
+
               <TextInput
               underlineColorAndroid={'transparent'}
               style={style.textInput}>
               </TextInput>
+
               <View style={{flex:0.1}}></View>
+
           </View>
 
          <View style={{flexDirection:'row'}}>
-          <View style={{flex:0.1}}></View>
+
+            <View style={{flex:0.1}}></View>
+
             <TextInput
             secureTextEntry={true}
             underlineColorAndroid={'transparent'}
             style={style.textInput}>
             </TextInput>
+
             <View style={{flex:0.1}}></View>
+
         </View>
 
         <View style={{flexDirection: 'row'}}>

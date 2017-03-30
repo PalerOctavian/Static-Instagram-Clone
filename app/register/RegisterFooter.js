@@ -10,13 +10,17 @@ export default class LoginFooter extends Component {
 	render(){
 		return (
 			<View style = {style.view}>
+
 				<Text style = {style.text}>
 					Already have an account?
+					
 					<Text style = {style.textHighlight}
 					onPress={() => Actions.login()}>
 					Log in.
 					</Text>
+
 				</Text>
+
 			</View>
 		)
 	};

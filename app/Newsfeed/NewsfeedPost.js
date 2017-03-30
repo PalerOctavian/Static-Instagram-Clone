@@ -49,17 +49,17 @@ class PostActions extends Component {
   render(){
     return(
       <View style={{flex:1, flexDirection:'row'}}>
-        <View style={{flex:.05}}>
+        <View style={{flex:.03}}>
         </View>
-        <View style={{flexDirection: 'row',flex:0.9, height: 50, borderBottomWidth: 1, borderBottomColor: 'rgba(0,0,0,0.05)', alignItems: 'center', justifyContent:'space-between'}}>
+        <View style={{flexDirection: 'row',flex:0.94, height: 50, borderBottomWidth: 0.5, borderBottomColor: 'rgba(0,0,0,0.05)', alignItems: 'center', justifyContent:'space-between'}}>
           <View style={{flexDirection: 'row'}}>
             <Image style={style.actionImage} source={require('./PostIcons/like.png')}/>
             <Image style={style.actionImage} source={require('./PostIcons/comment.png')}/>
             <Image style={style.actionImage} source={require('./PostIcons/share.png')}/>
           </View>
-          <Image style={{  opacity: .5}} source={require('./PostIcons/bookmark.png')}/>
+          <Image style={{  opacity: .5, height:25, width:25}} source={require('./PostIcons/bookmark.png')}/>
         </View>
-        <View style={{flex:.05}}>
+        <View style={{flex:.03}}>
         </View>
       </View>
     )
@@ -93,5 +93,7 @@ const style = StyleSheet.create({
   actionImage:{
     opacity: .5,
     marginRight: 15,
+    height:25,
+    width:25,
   }
 })

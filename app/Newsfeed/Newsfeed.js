@@ -7,18 +7,20 @@ import {
 } from 'react-native';
 import NewsfeedStory from './NewsfeedStory'
 import NewsfeedPost from './NewsfeedPost'
+import SuggestionsCarousel from './Suggestions'
 export default class Newsfeed extends Component {
   render(){
     return(
       <View style={{flex:1}}>
         <NewsfeedBanner/>
-        <View style={{flex:1, flexDirection: 'column'}}>
+        <View style={{flex:1, flexDirection: 'column',}}>
           <ScrollView showsVerticalScrollIndicator={false}>
 
             <NewsfeedStory />
             <NewsfeedPost/>
             <NewsfeedPost/>
             <NewsfeedPost/>
+            <SuggestionsCarousel/>
             <NewsfeedPost/>
           </ScrollView>
         </View>

@@ -13,7 +13,7 @@ import {
   Navigator,
   Image,
 } from 'react-native';
-import Login from './app/Login';
+import Login from './app/Login/Login';
 import Register from './app/register/Register';
 import Newsfeed from './app/Newsfeed/Newsfeed';
 import Search from './app/Search/Search';
@@ -59,6 +59,7 @@ export default class JmkProject extends Component {
         <Scene key="login" component={Login} hideNavBar={true}/>
         <Scene key="register" component={Register} hideNavBar={true}/>
         <Scene key="newsfeed" tabs={true} tabBarStyle={style.tabBar}>
+
           <Scene key="home" icon={HomeIcon} component={Newsfeed} hideNavBar={true}/>
           <Scene key="search"icon={SearchIcon} component={Search} hideNavBar={true}/>
           <Scene key="add" icon={AddIcon} component={Add} hideNavBar={true}/>
@@ -75,6 +76,8 @@ export default class JmkProject extends Component {
 const style = StyleSheet.create({
   icon: {
     opacity: 0.4,
+    height:25,
+    width:25,
   },
   tabBar: {
     backgroundColor: '#FFFFFF',
